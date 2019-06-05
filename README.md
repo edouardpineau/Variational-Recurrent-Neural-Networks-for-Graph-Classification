@@ -9,14 +9,14 @@ We address the problem of graph classification based only on structural informat
 
 Multi-task learning is a powerful leverage to learn rich representation in NLP [1]. We propose to use it for our problem.
 
-<img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="500">
+<img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="700">
 Figure 1: Schematic macro view of our model. 
 
 ### Graph preprocessing
 
 We use a BFS node ordering procedure to transform graph into sequence of nodes as in [2]. 
 
-##### Breadth-first search with random root $R$ for graph enumeration
+##### Breadth-first search with random root R for graph enumeration
 
 <img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="500">
 Figure 2: Example of a BFS node ordering.
@@ -54,8 +54,9 @@ Figure 6: Variational autoregressive node prediction.
 
 - VRGC is not structurally invariant to node indexing, it learns it from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding
 
-<img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="500">
+<img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400">
 Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.
+
 
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
 
