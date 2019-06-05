@@ -1,4 +1,5 @@
-# Variational-Recurrent-Neural-Networks-for-Graph-Classification
+# Variational Recurrent Neural Networks for Graph Classification
+
 Github page for the paper "Variational Recurrent Neural Networks for Graph Classification" presented at the RLGM workshop of ICLR 2019
 
 ## Abstract
@@ -57,6 +58,7 @@ Figure 6: Variational autoregressive node prediction.
 <img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400">
 Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.
 
+//
 
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
 
