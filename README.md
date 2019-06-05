@@ -1,6 +1,6 @@
 # Variational Recurrent Neural Networks for Graph Classification
 
-Github page for the paper "Variational Recurrent Neural Networks for Graph Classification" presented at the RLGM workshop of ICLR 2019
+Github page for the paper "Variational Recurrent Neural Networks for Graph Classification" presented at the RLGM workshop of ICLR 2019. 
 
 ## Abstract
 
@@ -20,7 +20,6 @@ We use a BFS node ordering procedure to transform graph into sequence of nodes a
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="400"></p>
 <p align="center">Figure 2: Example of a BFS node ordering.</p>
-<p style="text-decoration: underline;">This text will be underlined.</p>
 
 ##### Sequencial truncated node adjacency
 
@@ -56,7 +55,7 @@ A node prediction task is added to help the classifier. The task is performed by
 - VRGC is not structurally invariant to node indexing, it learns it from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400"></p>
-<p align="center">Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.</p>
+<p align="center">Figure 7: TSNE projection of the latent state preceding classification for five graphs from four distinct classes, each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.</p>
 
 &nbsp;
 
@@ -64,3 +63,12 @@ A node prediction task is added to help the classifier. The task is performed by
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/table.png" width="500"></p>
 <p align="center">Figure 8: Variational autoregressive node prediction.</p>
+
+
+## Datasets
+
+All datasets can be found here: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
+
+[1] V. Sanh, T. Wolf, and S. Ruder. A hierarchical multi-task approach for learning embeddings from semantic tasks. arXiv preprint arXiv:1811.06031, 2018.
+
+[2] GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models, Jiaxuan You, Rex Ying, Xiang Ren, William Hamilton, Jure Leskovec ; Proceedings of the 35th International Conference on Machine Learning, PMLR 80:5708-5717, 2018.
