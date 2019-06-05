@@ -11,7 +11,8 @@ We address the problem of graph classification based only on structural informat
 Multi-task learning is a powerful leverage to learn rich representation in NLP [1]. We propose to use it for our problem.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="700"></p>
-<p align="center"><p align="underline">Figure 1</p>: Schematic macro view of our model.</p>
+<p align="center">Figure 1: Schematic macro view of our model.</p>
+<p><u>This text will be underlined.</u></p>
 
 ### Graph preprocessing
 
