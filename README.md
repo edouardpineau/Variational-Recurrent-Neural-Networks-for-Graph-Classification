@@ -11,8 +11,6 @@ We address the problem of graph classification based only on structural informat
 Multi-task learning is a powerful leverage to learn rich representation in NLP [1]. We propose to use it for our problem.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="700"></p>
-<p align="center">Figure 1: Schematic macro view of our model.</p>
-
 
 ### Graph preprocessing
 
@@ -60,7 +58,7 @@ A node prediction task is added to help the classifier. The task is performed by
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400"></p>
 <p align="center">Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.</p>
 
-   <br/>
+&nbsp;
 
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
 
