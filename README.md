@@ -56,14 +56,14 @@ A node prediction task is added to help the classifier. The task is performed by
 
 ## Results
 
-- VRGC is not structurally invariant to node indexing, it learns it from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding
+- VRGC is not structurally invariant to node indexing, like in our previous [graph classification work](https://github.com/edouardpineau/A-simple-baseline-algorithm-for-graph-classification). However our model learns node indexing invariance from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400"></p>
 <p align="center">Figure 7: TSNE projection of the latent state preceding classification for five graphs from four distinct classes, each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.</p>
 
 &nbsp;
 
-- VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
+- VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/table.png" width="500"></p>
 <p align="center">Figure 8: Variational autoregressive node prediction.</p>
