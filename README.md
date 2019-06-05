@@ -65,7 +65,7 @@ A node prediction task is added to help the classifier. The task is performed by
 <p align="center">Figure 8: Variational autoregressive node prediction.</p>
 
 
-## Datasets
+## Datasets and references
 
 All datasets can be found here: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
 
