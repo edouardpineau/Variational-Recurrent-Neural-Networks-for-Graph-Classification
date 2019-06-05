@@ -19,7 +19,7 @@ We use a BFS node ordering procedure to transform graph into sequence of nodes a
 
 ##### Breadth-first search with random root R for graph enumeration
 
-<img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="500">
+<div style="text-align:center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="500"></div>
 Figure 2: Example of a BFS node ordering.
 
 ##### Sequencial truncated node adjacency
@@ -58,7 +58,7 @@ Figure 6: Variational autoregressive node prediction.
 <img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400">
 Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.
 
-//
+\
 
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
 
