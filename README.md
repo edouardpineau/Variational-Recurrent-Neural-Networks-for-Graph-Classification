@@ -20,19 +20,19 @@ Multi-task learning is a powerful leverage to learn rich representation in NLP [
 
 We use a BFS node ordering procedure to transform graph into sequence of nodes as in [2]. 
 
-##### Breadth-first search with random root R for graph enumeration
+#### Breadth-first search with random root R for graph enumeration
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="400"></p>
 <p align="center">Figure 2: Example of a BFS node ordering.</p>
 
-##### Sequencial truncated node adjacency
+#### Sequencial truncated node adjacency
 
 Each node is only related to its two closest neighbors in the order of the BFS to get a low dimensional sequence of nodes. 
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/SeqAdj.png" width="500"></p>
 <p align="center">Figure 3: Example of a BFS node ordering.</p>
 
-##### Complete graph-to-sequence embedding
+#### Complete graph-to-sequence embedding
 
 Each node embedding contains both current and previous node BFS-related adjacency information thanks to RNN memory structure.
 
