@@ -51,14 +51,14 @@ A node prediction task is added to help the classifier. The task is performed by
 Figure 6: Variational autoregressive node prediction.
 
 
-## Contribution
+## Results
 
 - VRGC is not structurally invariant to node indexing, it learns it from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/Projection.png" width="400"></p>
 Figure 7: TSNE projection of the latent state preceding classification for five graphs from Enzymes dataset [], each initiated with 20 different BFS. Colors and markers represent the respective classes of the graphs.
 
-\
+<br />
 
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs
 
