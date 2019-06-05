@@ -12,7 +12,7 @@ Multi-task learning is a powerful leverage to learn rich representation in NLP [
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="700"></p>
 <p align="center">Figure 1: Schematic macro view of our model.</p>
-<p><u>This text will be underlined.</u></p>
+
 
 ### Graph preprocessing
 
@@ -22,6 +22,7 @@ We use a BFS node ordering procedure to transform graph into sequence of nodes a
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="400"></p>
 <p align="center">Figure 2: Example of a BFS node ordering.</p>
+<p style="text-decoration: underline;">This text will be underlined.</p>
 
 ##### Sequencial truncated node adjacency
 
