@@ -36,21 +36,21 @@ Each node is only related to its two closest neighbors in the order of the BFS t
 
 Each node embedding contains both current and previous node BFS-related adjacency information thanks to RNN memory structure.
 
-<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_0.png" width="500"></p>
+<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_0.png" width="600"></p>
 <p align="center">Figure 4: Example of a BFS node ordering.</p>
 
 ### Recurrent neural network for sequence classification
 
 The fully connected (FC) classifier is fed with sequence of the truncated BFS-ordered embedded node sequence.
 
-<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_2.png" width="500"></p>
+<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_2.png" width="600"></p>
 <p align="center">Figure 5: Recurrent classifier for for sequence classification.</p>
 
 ### Variational autoregressive (VAR) node prediction
 
 A node prediction task is added to help the classifier. The task is performed by a variational autoencoder feed with the same sequence of embedded nodes than the recurrent classifier.
 
-<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_1.png" width="500"></p>
+<p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_1.png" width="600"></p>
 <p align="center">Figure 6: Variational autoregressive node prediction.</p>
 
 
