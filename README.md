@@ -1,6 +1,6 @@
 # Variational Recurrent Neural Networks for Graph Classification
 
-Github page for the paper "Variational Recurrent Neural Networks for Graph Classification" presented at the RLGM workshop of ICLR 2019. Paper can be found here: https://arxiv.org/abs/1902.02721
+This work was presented at the ICLR 2019 workshop session [Representation Learning on Graphs and Manifolds](https://rlgm.github.io/). Our paper can be found here: https://arxiv.org/abs/1902.02721
 
 ## Abstract
 
