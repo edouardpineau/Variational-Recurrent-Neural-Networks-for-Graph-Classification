@@ -4,6 +4,8 @@ This work was presented at the ICLR 2019 workshop session [Representation Learni
 
 Our paper can be found here: https://arxiv.org/abs/1902.02721
 
+Code release soon !
+
 ## Abstract
 
 We address the problem of graph classification based only on structural information. Inspired by natural language processing techniques (NLP), our model sequentially embeds information to estimate class membership probabilities. Besides, we experiment with NLP-like variational regularization techniques, making the model predict the next node in the sequence as it reads it. We experimentally show that our model achieves state-of-the-art classification results on several standard molecular datasets. Finally, we perform a qualitative analysis and give some insights on whether the node prediction helps the model better classify graphs.
