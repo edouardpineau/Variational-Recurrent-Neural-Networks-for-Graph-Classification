@@ -6,47 +6,47 @@ Our paper can be found here: https://arxiv.org/abs/1902.02721
 
 Code release soon !
 
-## Abstract
+### Abstract
 
 We address the problem of graph classification based only on structural information. Inspired by natural language processing techniques (NLP), our model sequentially embeds information to estimate class membership probabilities. Besides, we experiment with NLP-like variational regularization techniques, making the model predict the next node in the sequence as it reads it. We experimentally show that our model achieves state-of-the-art classification results on several standard molecular datasets. Finally, we perform a qualitative analysis and give some insights on whether the node prediction helps the model better classify graphs.
 
-## Multi-task learning
+### Multi-task learning
 
 Multi-task learning is a powerful leverage to learn rich representation in NLP [1]. We propose to use it for our problem.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_macro.png" width="700"></p>
 
-### Graph preprocessing
+#### Graph preprocessing
 
 We use a BFS node ordering procedure to transform graph into sequence of nodes as in [2]. 
 
-#### Breadth-first search with random root R for graph enumeration
+##### Breadth-first search with random root R for graph enumeration
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/BFS.png" width="400"></p>
 <p align="center">Figure 2: Example of a BFS node ordering.</p>
 
-#### Sequencial truncated node adjacency
+##### Sequencial truncated node adjacency
 
 Each node is only related to its two closest neighbors in the order of the BFS to get a low dimensional sequence of nodes. 
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/SeqAdj.png" width="500"></p>
 <p align="center">Figure 3: Example of a BFS node ordering.</p>
 
-#### Complete graph-to-sequence embedding
+##### Complete graph-to-sequence embedding
 
 Each node embedding contains both current and previous node BFS-related adjacency information thanks to RNN memory structure.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_0.png" width="600"></p>
 <p align="center">Figure 4: Example of a BFS node ordering.</p>
 
-### Recurrent neural network for sequence classification
+#### Recurrent neural network for sequence classification
 
 The fully connected (FC) classifier is fed with sequence of the truncated BFS-ordered embedded node sequence.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/archi_2.png" width="600"></p>
 <p align="center">Figure 5: Recurrent classifier for for sequence classification.</p>
 
-### Variational autoregressive (VAR) node prediction
+#### Variational autoregressive (VAR) node prediction
 
 A node prediction task is added to help the classifier. The task is performed by a variational autoencoder feed with the same sequence of embedded nodes than the recurrent classifier.
 
@@ -54,7 +54,7 @@ A node prediction task is added to help the classifier. The task is performed by
 <p align="center">Figure 6: Variational autoregressive node prediction.</p>
 
 
-## Results
+### Results
 
 - VRGC is not structurally invariant to node indexing, like in our previous [graph classification work](https://github.com/edouardpineau/A-simple-baseline-algorithm-for-graph-classification). However our model learns node indexing invariance from numerous training iterations on randomly-rooted BFS-ordered sequential graph embedding.
 
@@ -69,7 +69,7 @@ A node prediction task is added to help the classifier. The task is performed by
 <p align="center">Figure 8: Variational autoregressive node prediction.</p>
 
 
-## Datasets and references
+### Datasets and references
 
 All datasets can be found here: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
 
