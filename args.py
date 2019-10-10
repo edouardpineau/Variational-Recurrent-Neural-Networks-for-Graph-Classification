@@ -1,7 +1,7 @@
 # ---- Program configuration ---- #
 
 class Args:
-    def __init__(self, data_directory='/data/tsi/analyse_de_donnees/04-Data/Graph_datasets/', cuda=False, graph_name='ENZYMES'):
+    def __init__(self, data_directory='Graph_datasets/', cuda=False, graph_name='ENZYMES'):
         """
         Class arguments to initialize the VRGC problem parameters
         
