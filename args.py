@@ -36,7 +36,7 @@ class Args:
 
         # ---- Training config ---- #
         self.loss = None
-        self.batch_size = 7  # normal: 32, and the rest should be changed accordingly
+        self.batch_size = 128
         self.epochs = 2000 
         self.epochs_log = 1
 
