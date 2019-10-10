@@ -19,7 +19,6 @@ def create_loaders(graphs, args):
     :param args: arguments of the problem
     :return: train and test loaders for the 10-cross validation classification
     """
-    # random.seed(1234)
     random.shuffle(graphs)
 
     skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=0)
