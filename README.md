@@ -4,7 +4,7 @@ This work was presented at the ICLR 2019 workshop session [Representation Learni
 
 Our paper can be found here: https://rlgm.github.io/papers/9.pdf
 
-The notebook VRGC.py requires the data that can be downloaded here: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
+The notebook VRGC.py requires the data that can be downloaded [here](https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets).
 
 ### Abstract
 
