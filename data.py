@@ -56,7 +56,7 @@ def create_loaders(graphs, args):
     return dataloaders_train, dataloaders_test
 
 
-def graph_load_batch(data_directory='../datasets/ENZYMES/', name='PROTEINS_full'):
+def graph_load_batch(data_directory, name):
     """
     Reads graphs from files in a given directory and transforms them into networkx objects
 
