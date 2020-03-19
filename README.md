@@ -66,7 +66,7 @@ A node prediction task is added to help the classifier. The task is performed by
 - VAR helps the model finding a more meaningful latent representation for classification while graph dataset becomes larger, with marginal extra computational cost with respect to RNNs.
 
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/table.png" width="500"></p>
-<p align="center">Figure 8: Variational autoregressive node prediction.</p>
+<p align="center">Figure 8: Classification results.</p>
 
 
 ### Datasets and references
