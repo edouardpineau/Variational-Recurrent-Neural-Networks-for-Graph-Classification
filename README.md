@@ -68,6 +68,15 @@ A node prediction task is added to help the classifier. The task is performed by
 <p align="center"><img src="https://github.com/edouardpineau/Variational-Recurrent-Neural-Networks-for-Graph-Classification/raw/master/images/table.png" width="500"></p>
 <p align="center">Figure 8: Classification results.</p>
 
+### Citing
+
+    @article{pineau2019variational,
+              title={Variational recurrent neural networks for graph classification},
+              author={Pineau, Edouard and de Lara, Nathan},
+              journal={Representation Learning on Graphs and Manifolds Workshop (ICLR)},
+              year={2019}
+}
+
 
 ### Datasets and references
 
